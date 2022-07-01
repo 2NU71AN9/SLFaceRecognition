@@ -217,4 +217,9 @@ extension ViewController {
         imageView.image = faceImage
         checkFace(image: faceImage)
     }
+    
+    private func shot() {
+        let captureConnection = output.connection(with: .video)
+        AVCapturePhotoOutput()
+    }
 }
